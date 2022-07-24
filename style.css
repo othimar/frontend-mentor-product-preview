@@ -23,7 +23,7 @@ main{
     display: flex;
     flex-direction: column;
     border-radius:18px;
-    padding: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.168);
 }
 .item-presentation{
     background-color: rgb(255, 255, 255);
@@ -85,13 +85,14 @@ main{
 }
 @media (min-width: 800px) {
     .card{
-        width: 600px;
+        max-width: 50%;
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: auto 50%;
     }
     
     .photo{
         height: 100%;
+        max-height: 100%;
         border-radius: 18px 0 0 18px;
     }
     .item-presentation{
